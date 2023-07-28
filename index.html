@@ -16,21 +16,16 @@
       <div class="give-away-left">
         <div class="form-box">
           <label for="">Enter All Names</label>
-          <textarea name="" id="" cols="30" rows="20"></textarea>
+          <textarea id="textarea" cols="30" rows="20"></textarea>
         </div>
         <!-- END form-box -->
         <div class="show-list-btn">
-          <button id="btn" type="button">Show All Names List</button>
+          <button id="showListBtn" type="button">Show All Names List</button>
         </div>
         <!-- END! show-list-btn -->
 
         <div class="list-items" id="list">
-          <ul id="listHeight">
-            <li>One</li>
-            <li>Two</li>
-            <li>three</li>
-            <li>four</li>
-          </ul>
+          <ul id="listHeight"></ul>
         </div>
         <!-- END! list-items -->
       </div>
@@ -44,7 +39,7 @@
         <!-- END! display-text -->
 
         <div class="winner-select-btn">
-          <button type="button">Give A Try</button>
+          <button type="button" id="winner_select">Give A Try</button>
         </div>
         <!-- END! winner-select-btn -->
 
@@ -52,15 +47,15 @@
           <ul>
             <li>
               <p>First Winner:</p>
-              <h3>Abdullah Al Nomaan</h3>
+              <h3 id="first_winner">Abdullah Al Nomaan</h3>
             </li>
             <li>
               <p>Second Winner:</p>
-              <h3>Abu Hasnat</h3>
+              <h3 id="second_winner">Abu Hasnat</h3>
             </li>
             <li>
               <p>Third Winner:</p>
-              <h3>Abdur Rahman</h3>
+              <h3 id="third_winner">Abdur Rahman</h3>
             </li>
           </ul>
         </div>
