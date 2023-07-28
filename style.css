@@ -4,6 +4,7 @@
   --input-color: #131313;
   --text-color: #636363;
   --primary-color: #4545f8;
+  --secondary-color: #23d719;
   --color-white: #fff;
 }
 
@@ -14,8 +15,8 @@
 
 /* --- title --- */
 .title h1 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 600;
   font-family: var(--font-en-primary);
   text-align: center;
   margin-bottom: 24px;
@@ -26,14 +27,23 @@
   max-width: 900px;
   width: 100%;
   display: grid;
-  grid-template-columns: calc(100% - 420px) 400px;
-  grid-gap: 20px;
+  grid-template-columns: calc(100% - 440px) 400px;
+  grid-gap: 40px;
   margin: 0 auto;
 }
 
 /* --- give-away-left --- */
 .give-away-left {
   width: 100%;
+}
+
+.form-box label {
+  font-family: var(--font-en-primary);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--input-color);
+  display: block;
+  margin-bottom: 8px;
 }
 
 .form-box textarea {
@@ -92,7 +102,7 @@
 
 .list-items ul li {
   font-family: var(--font-en-primary);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--text-color);
   padding: 7px 10px;
@@ -102,4 +112,81 @@
 
 .list-items ul li:nth-child(even) {
   border-right: 0px;
+}
+
+/* --- give-away-right --- */
+.display-text label {
+  font-family: var(--font-en-primary);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--input-color);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.display {
+  font-family: var(--font-en-primary);
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-color);
+  width: 100%;
+  border: 1px solid var(--border-color);
+  padding: 15px 5px;
+  border-radius: 4px;
+}
+
+.winner-select-btn {
+  margin: 23.5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.winner-select-btn button {
+  border: 0;
+  background-color: var(--secondary-color);
+  font-family: var(--font-en-primary);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-white);
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.winner-list {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.winner-list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.winner-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 10px;
+}
+
+.winner-list li:last-child {
+  border-bottom: 0 solid var(--border-color);
+}
+
+.winner-list ul li p,
+h3 {
+  font-family: var(--font-en-primary);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.winner-list ul li h3 {
+  color: var(--input-color);
 }

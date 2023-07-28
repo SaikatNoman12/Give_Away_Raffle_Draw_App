@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- title -->
     <div class="title">
       <h1>Give Away Raffle Draw App</h1>
     </div>
+    <!-- END! title -->
 
-    <!-- give-away-main area -->
     <div class="give-away-main">
-      <!-- give-away-left -->
       <div class="give-away-left">
         <div class="form-box">
+          <label for="">Enter All Names</label>
           <textarea name="" id="" cols="30" rows="20"></textarea>
         </div>
+        <!-- END form-box -->
         <div class="show-list-btn">
-          <button id="btn" type="button">Show List</button>
+          <button id="btn" type="button">Show All Names List</button>
         </div>
+        <!-- END! show-list-btn -->
 
         <div class="list-items" id="list">
           <ul id="listHeight">
@@ -31,11 +32,43 @@
             <li>four</li>
           </ul>
         </div>
+        <!-- END! list-items -->
       </div>
+      <!-- END! give-away-left -->
 
-      <!-- give-away-right -->
-      <div class="give-away-right"></div>
+      <div class="give-away-right">
+        <div class="display-text">
+          <label for="">Output Display</label>
+          <div class="display">Display</div>
+        </div>
+        <!-- END! display-text -->
+
+        <div class="winner-select-btn">
+          <button type="button">Give A Try</button>
+        </div>
+        <!-- END! winner-select-btn -->
+
+        <div class="winner-list">
+          <ul>
+            <li>
+              <p>First Winner:</p>
+              <h3>Abdullah Al Nomaan</h3>
+            </li>
+            <li>
+              <p>Second Winner:</p>
+              <h3>Abu Hasnat</h3>
+            </li>
+            <li>
+              <p>Third Winner:</p>
+              <h3>Abdur Rahman</h3>
+            </li>
+          </ul>
+        </div>
+        <!-- END! winner-list -->
+      </div>
+      <!-- END! give-away-right -->
     </div>
+    <!-- END! give-away-main -->
 
     <script src="./app.js"></script>
   </body>
