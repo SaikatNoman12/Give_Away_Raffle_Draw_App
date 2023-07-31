@@ -139,14 +139,16 @@
   border-radius: 4px;
 }
 
-.winner-select-btn {
-  margin: 23.5px 0;
+.winner-select-btn,
+.refresh-select-btn {
+  margin: 21.5px 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.winner-select-btn button {
+.winner-select-btn button,
+.refresh-select-btn button {
   border: 0;
   background-color: var(--secondary-color);
   font-family: var(--font-en-primary);
@@ -156,6 +158,11 @@
   border-radius: 4px;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+.refresh-select-btn button {
+  width: 100%;
+  background-color: crimson;
 }
 
 .winner-list {
